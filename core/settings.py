@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-llddg35p-v8s=tg_=ls(4^=f2yg6a$l10z-01sn_776d@qwvz4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'gmaillogs.pythonanywhere.com',
+    'https://gmaillogs.pythonanywhere.com'
+]
 
 
 # Application definition
